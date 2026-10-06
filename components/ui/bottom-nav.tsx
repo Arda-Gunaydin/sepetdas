@@ -3,6 +3,7 @@
 import { LayoutList, ListChecks, Plus, UserRound } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const items = [
   { href: "/pano", label: "Pano", Icon: LayoutList },
@@ -11,8 +12,21 @@ const items = [
   { href: "/profil", label: "Profil", Icon: UserRound },
 ];
 
+function matches(href: string, path: string) {
+  return path === href || (href !== "/ilan/yeni" && path.startsWith(`${href}/`));
+}
+
 export function BottomNav() {
   const pathname = usePathname();
+  // Tıklanan sekme, sayfa yüklenirken de hemen seçili görünsün. Adres değişince normal hesaplamaya döner.
+  const [clicked, setClicked] = useState<{ href: string; from: string } | null>(null);
+  const [prevPath, setPrevPath] = useState(pathname);
+  if (pathname !== prevPath) {
+    // Adres değişti (geçiş bitti ya da geri tuşu): iyimser seçimi bırak.
+    setPrevPath(pathname);
+    setClicked(null);
+  }
+  const optimistic = clicked && clicked.from === pathname ? clicked.href : null;
   return (
     <nav
       aria-label="Ana menü"
@@ -20,12 +34,15 @@ export function BottomNav() {
     >
       <ul className="mx-auto grid max-w-xl grid-cols-4">
         {items.map(({ href, label, Icon }) => {
-          const active = pathname === href || (href !== "/ilan/yeni" && pathname.startsWith(`${href}/`));
+          const active = optimistic ? optimistic === href : matches(href, pathname);
           return (
             <li key={href}>
               <Link
                 href={href}
                 aria-current={active ? "page" : undefined}
+                onClick={() => {
+                  if (!matches(href, pathname)) setClicked({ href, from: pathname });
+                }}
                 className={`flex min-h-16 flex-col items-center justify-center gap-1 text-xs font-semibold transition-colors duration-150 ${
                   active ? "text-primary" : "text-muted-foreground hover:text-foreground"
                 }`}
