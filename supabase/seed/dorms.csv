@@ -1,0 +1,768 @@
+city,name
+Adana,Adana Öğrenci Yurdu
+Adana,Beş Ocak Öğrenci Yurdu
+Adana,Ceyhan Yurdu
+Adana,Fevzi Çakmak Yurdu (Adana)
+Adana,Kozan Öğrenci Yurdu
+Adana,Kut'ul Amare Öğrenci Yurdu
+Adana,Mahmut Sami Ramazanoğlu Öğrenci Yurdu
+Adana,Toroslar Öğrenci Yurdu
+Adana,Çukurova Öğrenci Yurdu
+Adıyaman,Adıyaman Yurdu
+Adıyaman,Besni - Servi M. Erdemoğlu Yurdu
+Adıyaman,Kahta Yurdu
+Adıyaman,Safvan Bin Muattal Yurdu
+Adıyaman,Veysel Karani Yurdu
+Adıyaman,Yediyaman Öğrenci Yurdu
+Afyonkarahisar,Abdürrahim Mısri Öğrenci Yurdu
+Afyonkarahisar,Afyon Yurdu
+Afyonkarahisar,Afyon - Tınaztepe Öğrenci Yurdu
+Afyonkarahisar,Afyon - Çiğiltepe Kız Öğrenci Yurdu
+Afyonkarahisar,Bacım Sultan Öğrenci Yurdu
+Afyonkarahisar,Bayat Öğrenci Yurdu
+Afyonkarahisar,Bolvadin Kız Öğrenci Yurdu
+Afyonkarahisar,Bolvadin Öğrenci Yurdu
+Afyonkarahisar,Destine Hatun Öğrenci Yurdu
+Afyonkarahisar,Dinar Öğrenci Yurdu
+Afyonkarahisar,Emirdağ Öğrenci Yurdu
+Afyonkarahisar,Esma Sultan Öğrenci Yurdu
+Afyonkarahisar,Kamil Miras Öğrenci Yurdu
+Afyonkarahisar,Prof. Dr. Remzi Kaya Kız Öğrenci Yurdu
+Afyonkarahisar,Safiye Sultan Öğrenci Yurdu
+Afyonkarahisar,Sultan Divani Öğrenci Yurdu
+Afyonkarahisar,Çay Öğrenci Yurdu
+Afyonkarahisar,Şuhut Öğrenci Yurdu
+Aksaray,Aksaray Erkek Yurdu
+Aksaray,Aksaray Kız Yurdu
+Aksaray,Alime Hatun Öğrenci Yurdu
+Aksaray,Cemaleddin Aksaray-i Öğrenci Yurdu
+Aksaray,Güzelyurt Öğrenci Yurdu
+Aksaray,Hamid-i Veli Öğrenci Yurdu
+Aksaray,Mahperi Hatun Öğrenci Yurdu
+Aksaray,Ortaköy Yurdu
+Aksaray,Sultan Mesud Öğrenci Yurdu
+Amasya,Amasya Yurdu
+Amasya,Amasya - Yeşilırmak Yurdu
+Amasya,Gümüşhacıköy Öğrenci Yurdu
+Amasya,Hüsnüşah Hatun Yurdu
+Amasya,Kara Mustafa Paşa Öğrenci Yurdu
+Amasya,Merzifon Yurdu
+Amasya,Sultan Bayezid Öğrenci Yurdu
+Amasya,Suluova Öğrenci Yurdu
+Ankara,Ankara Hacı Bayram-ı Veli Öğrenci Yurdu
+Ankara,Bağlıca Öğrenci Yurdu
+Ankara,Başkent Yurdu
+Ankara,Beştepe Yurdu
+Ankara,Cebeci Erkek Yurdu
+Ankara,Cebeci Kız Yurdu
+Ankara,Emine Şerife Hanım Öğrenci Yurdu
+Ankara,Fatma Hanım Öğrenci Yurdu
+Ankara,Gazi Yurdu
+Ankara,Gölbaşı Öğrenci Yurdu
+Ankara,Gölbaşı Şehit Özel Harekatçılar Yurdu
+Ankara,Güvenlik Yurdu
+Ankara,Hacı Ömer Sabancı Yurdu (Ankara)
+Ankara,Hafız Mustafa Sümer Öğrenci Yurdu
+Ankara,Haymana Öğrenci Yurdu
+Ankara,Hüseyin Gazi Öğrenci Yurdu
+Ankara,Mahmut Nedim Zapçı Yurdu (Ank)
+Ankara,Mehmet Akif Yurdu (Ankara)
+Ankara,Milli İrade Öğrenci Yurdu
+Ankara,Nenehatun Yurdu
+Ankara,Osman Tan Öğrenci Yurdu
+Ankara,Polatlı Yurdu
+Ankara,Saime Kadın Öğrenci Yurdu
+Ankara,Seyran Yurdu
+Ankara,Taceddin Veli Öğrenci Yurdu
+Ankara,Tahsin Banguoğlu Yurdu
+Ankara,Yenimahalle Öğrenci Yurdu
+Ankara,Yenişehir Yurdu
+Ankara,Yunus Emre Yurdu
+Ankara,Zübeyde Hanım Yurdu (Ankara)
+Ankara,Çubuk Ulubey Öğrenci Yurdu
+Ankara,Şereflikoçhisar Yurdu
+Ankara,Şerife Bacı Yurdu
+Antalya,Ahmet Hamdi Akseki Öğrenci Yurdu
+Antalya,Akdeniz Yurdu
+Antalya,Alanya Terken Hatun Öğrenci Yurdu
+Antalya,Alanya Öğrenci Yurdu
+Antalya,Elmalılı Hamdi Yazır Öğrenci Yurdu
+Antalya,Gazipaşa Öğrenci Yurdu
+Antalya,Korkuteli Öğrenci Yurdu
+Antalya,Kumluca Öğrenci Yurdu
+Antalya,Manavgat Öğrenci Yurdu
+Antalya,Manavgat Şelale Öğrenci Yurdu
+Antalya,Muratpaşa Öğrenci Yurdu
+Antalya,Serik Öğrenci Yurdu
+Antalya,Şehzade Korkut Öğrenci Yurdu
+Ardahan,Ardahan Yurdu
+Ardahan,Kaşgarlı Mahmut Öğrenci Yurdu
+Ardahan,Niyazi Mısri Öğrenci Yurdu
+Artvin,Artvin Yurdu
+Artvin,Hamdi Efendi Öğrenci Yurdu
+Artvin,Hopa Yurdu
+Artvin,Nedime Lütfiye Günal Öğrenci Yurdu
+Artvin,Çoruh Öğrenci Yurdu
+Artvin,Şah Sultan Öğrenci Yurdu
+Artvin,Şavşat Öğrenci Yurdu
+Aydın,Aydın Yurdu
+Aydın,Aydın - Adnan Menderes Öğrenci Yurdu
+Aydın,Efe Ayşe Öğrenci Yurdu
+Aydın,Gevherhan Sultan Öğrenci Yurdu
+Aydın,Gülçiçek Hatun Öğrenci Yurdu
+Aydın,Güzelhisar Öğrenic Yurdu
+Aydın,Hacı Mustafa Efendizade Öğrenci Yurdu
+Aydın,Karacasu Öğrenci Yurdu
+Aydın,Kuşadası Yurdu
+Aydın,Meryem Yazıcıoğlu Öğrenci Yurdu
+Aydın,Nazilli Yurdu
+Aydın,Sultanhisar Öğrenci Yurdu
+Aydın,Yenipazar Yurdu
+Aydın,İsabeyli Yurdu (Nazilli)
+Ağrı,Abdurrahim Arvasi Öğrenci Yurdu
+Ağrı,Ahmed-i Hani Öğrenci Yurdu
+Ağrı,Ağrı Yurdu
+Ağrı,Ümmü Eyüp Öğrenci Yurdu
+Ağrı,İshak Paşa Öğrenci Yurdu
+Balıkesir,Ayhan Songar Öğrenci Yurdu
+Balıkesir,Ayvalık Öğrenci Yurdu
+Balıkesir,Balıkesir Yurdu
+Balıkesir,Bandırma Öğrenci Yurdu
+Balıkesir,Bigadiç Öğrenci Yurdu
+Balıkesir,Dursunbey Öğrenci Yurdu
+Balıkesir,Fatma Ana Öğrenci Yurdu
+Balıkesir,Gönenli Mehmet Efendi Öğrenci Yurdu
+Balıkesir,Hasan Basri Çantay Öğrenci Yurdu
+Balıkesir,Manyas Öğrenci Yurdu
+Balıkesir,Muhyiddin-i Rumi Öğrenci Yurdu
+Balıkesir,Yarbay Vecihibey Öğrenci Yurdu
+Bartın,Bartın Yurdu
+Bartın,Bartın Çeşm-i Cihan Yurdu
+Bartın,Hacı İbrahim Paşa Öğrenci Yurdu
+Bartın,Mehmet Rıfat Efendi Öğrenci Yurdu
+Batman,Batman Kız Öğrenci Yurdu
+Batman,Seyyid Bilal Öğrenci Yurdu
+Batman,Süveybe Ana Öğrenci Yurdu
+Bayburt,Ağlarbaba Öğrenci Yurdu
+Bayburt,Bayburt Öğrenci Yurdu
+Bayburt,Dede Korkut Öğrenci Yurdu
+Bayburt,Sultan Fahriye Öğrenci Yurdu
+Bilecik,Bilecik Halime Hatun Öğrenci Yurdu
+Bilecik,Bilecik Yurdu
+Bilecik,Ertuğrulgazi Öğrenci Yurdu
+Bilecik,Pazaryeri Öğrenci Yurdu
+Bilecik,Şeyh Edebalı Öğrenci Yurdu
+Bingöl,Bingöl Erkek Öğrenci Yurdu
+Bingöl,Bingöl Kız Öğrenci Yurdu
+Bingöl,Mürsel Paşa Öğrenci Yurdu
+Bingöl,Pir Ali Bey Öğrenci Yurdu
+Bingöl,Yusuf Harputi Öğrenci Yurdu
+Bitlis,Adilcevaz Öğrenci Yurdu
+Bitlis,Beşminare Yurdu
+Bitlis,Bitlis Erkek Öğrenci Yurdu
+Bitlis,Bitlis Kız Öğrenci Yurdu
+Bitlis,Tatvan Yurdu
+Bolu,Bolu Gölköy Öğrenci Yurdu
+Bolu,Bolu İzzet Baysal Öğrenci Yurdu
+Bolu,Bolu - Abant Öğrenci Yurdu
+Bolu,Gerede Yurdu
+Bolu,Geredeli İshak Bey Öğrenci Yurdu
+Bolu,Hattat Emin Barın Öğrenci Yurdu
+Bolu,Hayreddin Tokadi Öğrenci Yurdu
+Bolu,Mudurnu - Hacı Mehmet Astarcı Yurdu
+Bolu,Seben İzzet Baysal Myo Öğrenci Yurdu
+Bolu,Seyit Avşar Öğrenci Yurdu
+Bolu,Seyyide Nefise Öğrenci Yurdu
+Burdur,Asım'ın Nesli Öğrenci Yurdu
+Burdur,Bucak Öğrenci Yurdu
+Burdur,Burdur Yurdu
+Burdur,Fereli Sinan Efendi Öğrenciyurdu
+Burdur,Gölhisar Öğrenci Yurdu
+Burdur,Safahat Öğrenci Yurdu
+Bursa,Bursa Emir Sultan Öğrenci Yurdu
+Bursa,Gemlik Öğrenci Yurdu
+Bursa,Gülruh Hatun Öğrenci Yurdu
+Bursa,Halime Hatun Öğrenci Yurdu
+Bursa,Karacabey Öğrenci Yurdu
+Bursa,Malhun Hatun Öğrenci Yurdu
+Bursa,Mehmed Zahid Kotku Öğrenci Yurdu
+Bursa,Nilüfer Hatun Öğrenci Yurdu
+Bursa,Orhangazi Yurdu
+Bursa,Uludağ Yurdu
+Bursa,Şirin Hatun Öğrenci Yurdu
+Denizli,Bekilli Yurdu
+Denizli,Biruni Yurdu
+Denizli,Buldan Öğrenci Yurdu
+Denizli,Fatma Yıldız Hanım Öğrenci Yurdu
+Denizli,Harezmi Yurdu
+Denizli,Honaz Öğrenci Yurdu
+Denizli,Pamukkale Yurdu
+Denizli,Prof. Dr. Cevat Akşit Yurdu
+Denizli,Tavas Öğrenci Yurdu
+Denizli,Çivril Öğrenci Yurdu
+Denizli,İbn-i Haldun Yurdu
+Denizli,İbn-i Rüşd Yurdu
+Diyarbakır,Diyarbakır - Selahattin Eyyubi Kız Öğrenci Yurdu
+Diyarbakır,Halid Bin Velid Öğrenci Yurdu
+Diyarbakır,Süleyman Bin Halid Öğrenci Yurdu
+Düzce,Akçakoca Yurdu
+Düzce,Aliye İzzet Begoviç Öğrenci Yurdu
+Düzce,Cahit Zarifoğlu Öğrenci Yurdu
+Düzce,Cumayeri Öğrenci Yurdu
+Düzce,Düzce Avni Akyol Yurdu
+Düzce,Düzce - Konuralp Öğrenci Yurdu
+Düzce,Hafız Hasan Şen Öğrenci Yurdu
+Düzce,Mahpeyker Sultan Öğrenci Yurdu
+Düzce,Necla Pekolcay Öğrenci Yurdu
+Düzce,Raziye Begüm Sultan Öğrenci Yurdu
+Düzce,Zahidül Kevseri Öğrenci Yurdu
+Edirne,Edirne Kız Öğrenci Yurdu
+Edirne,Gazi Evrenos Öğrenci Yurdu
+Edirne,Gülşeni Öğrenci Yurdu
+Edirne,Keşan Yurdu
+Edirne,Sedefkar Mehmed Ağa Öğrenci Yurdu
+Edirne,Selimiye Yurdu
+Edirne,Sultan II. Murat Öğrenci Yurdu
+Edirne,Sultan Çelebi Mehmet Öğrenci Yurdu
+Edirne,Uzunköpru Öğrenci Yurdu
+Edirne,İpsala Öğrenci Yurdu
+Elazığ,Ahmet Kabaklı Yurdu
+Elazığ,Elazığ - Fırat Erkek Yurdu
+Elazığ,Fethi Sekin Öğrenci Yurdu
+Elazığ,Harput Öğrenci Yurdu
+Elazığ,Sare Ana Yurdu
+Elazığ,Ömer Bilginoğlu Yurdu
+Elazığ,İzzetpaşa Öğrenci Yurdu
+Erzincan,Erzincan Öğrenci Yurdu
+Erzincan,Erzincan - Mengücek Gazi Öğrenci Yurdu
+Erzincan,Kemah Yurdu
+Erzincan,Kemaliye - Osman Nuri Akın Yurdu
+Erzincan,Pir Muhammed Bahaeddin Öğrenci Yurdu
+Erzincan,Piri Sami Öğrenci Yurdu
+Erzincan,Refahiye Sydv Öğrenci Yurdu
+Erzincan,Salih Baba Öğrenci Yurdu
+Erzincan,Tercan - M. Refik Şimşek Yurdu
+Erzincan,Terzibaba Öğrenci Yurdu
+Erzincan,Çayırlı Davut Sulari Öğrenci Yurdu
+Erzincan,Üzümlü Ciminli Baba Öğrenci Yurdu
+Erzurum,Abdurrahmangazi Öğrenci Yurdu
+Erzurum,Aziziye Öğrenci Yurdu
+Erzurum,Aşkale Yurdu
+Erzurum,Erzurum Kız Öğrenci Yurdu
+Erzurum,Erzurum - Alvarlı Efe Öğrenci Yurdu
+Erzurum,Erzurum - Nene Hatun Öğrenci Yurdu
+Erzurum,Erzurum - İbrahim Hakkı Öğrenci Yurdu
+Erzurum,Horasan Öğrenci Yurdu
+Erzurum,Hınıs Öğrenci Yurdu
+Erzurum,Kazım Karabekir Yurdu
+Erzurum,Narman Öğrenci Yurdu
+Erzurum,Nurettin Topçu Öğrenci Yurdu
+Erzurum,Oltu Yurdu
+Erzurum,Oğuzhan Yaşar Öğrenci Yurdu
+Erzurum,Palandöken Yurdu
+Erzurum,Pasinler Yurdu
+Erzurum,Rabia Hatun Öğrenci Yurdu
+Erzurum,Yakutiye Öğrenci Yurdu
+Erzurum,Ömer Nasuhi Bilmen Öğrenci Yurdu
+Erzurum,İspir - Vilayetler Hiz. Birliği Öğrenci Yurdu
+Eskişehir,Bala Hatun Öğrenci Yurdu
+Eskişehir,Cumhuriyet Öğrenci Yurdu
+Eskişehir,Doğan Aslan Bey Öğrenci Yurdu
+Eskişehir,Emine Hatun Öğrenci Yurdu
+Eskişehir,Eskişehir Yurdu
+Eskişehir,Gündüzalp Öğrenci Yurdu
+Eskişehir,Mükrime Hatun Öğrenci Yurdu
+Eskişehir,Osman Efendi Öğrenci Yurdu
+Eskişehir,Sivrihisar Öğrenci Yurdu
+Eskişehir,Yunus Emre Öğrenci Yurdu (Esk.)
+Eskişehir,İbn-i Sina Öğrenci Yurdu
+Gaziantep,Abdülkadir Güllüoğlu Öğrenci Yurdu
+Gaziantep,Ezogelin Öğrenci Yurdu
+Gaziantep,Gazikent Öğrenci Yurdu
+Gaziantep,Nizip Yurdu
+Gaziantep,Oğuzeli Öğrenci Yurdu
+Gaziantep,Ukkaşe Öğrenci Yurdu
+Gaziantep,Ümmü Gülsüm Öğrenci Yurdu
+Gaziantep,Şehitkamil Öğrenci Yurdu
+Giresun,Alucra Yurdu
+Giresun,Aziz Hüseyin Gökçe Öğrenci Yurdu
+Giresun,Esma Serhat Hatun Öğrenci Yurdu
+Giresun,Eynesil Öğrenci Yurdu
+Giresun,Giresun Sahil Öğrenci Yurdu
+Giresun,Giresun Yurdu
+Giresun,Görele Öğrenci Yurdu
+Giresun,Gülpembe Hatun Öğrenci Yurdu
+Giresun,Seyyid Vakkas Yurdu
+Giresun,Tirebolu Öğrenci Yurdu
+Giresun,Şebinkarahisar Öğrenci Yurdu
+Gümüşhane,Ahmet Ziyaüddin Gumuşhanevi Yurdu
+Gümüşhane,Gumuşhane Yurdu
+Gümüşhane,Gümüşhane Halit Zarbun Yurdu
+Gümüşhane,Hacı Şaban Cengiz Yurdu
+Gümüşhane,Köse Öğrenci Yurdu
+Gümüşhane,Mustafa Gül Öğrenci Yurdu
+Gümüşhane,Osman Nuri Efendi Yurdu
+Gümüşhane,Zeynep Ana Yurdu
+Hakkari,Afife Yurdu
+Hakkari,Hakkari Yurdu
+Hatay,Antakya Yurdu
+Hatay,Beyazıd-ı Bestami Öğrenci Yurdu
+Hatay,Cemil Meriç Öğrenci Yurdu
+Hatay,Dörtyol Öğrenci Yurdu
+Hatay,Gaziye Hatun Öğrenci Yurdu
+Hatay,Muhyiddin İbn-i Arabi Öğrenci Yurdu
+Hatay,Reyhanlı Öğrenci Yurdu
+Hatay,Tayfur Sökmen Öğrenci Yurdu
+Hatay,Yayladağı Öğrenci Yurdu
+Hatay,İskenderun Yurdu
+Isparta,Atabey Yurdu
+Isparta,Bediüzzaman Said Nursi Öğrenci Yurdu
+Isparta,Eğirdir Yurdu
+Isparta,Gülcihan Öğrenci Yurdu
+Isparta,Gülistan Öğrenci Yurdu
+Isparta,Gülkent Öğrenci Yurdu
+Isparta,Isparta Murat Hüdavendigar Öğrenci Yurdu
+Isparta,Isparta Öğrenci Yurdu
+Isparta,Kutlubey Öğrenci Yurdu
+Isparta,Mihri Hatun Öğrenci Yurdu
+Isparta,Sütçüler Öğrenci Yurdu
+Isparta,Yalvaç Yurdu
+Isparta,Şarkikaraağaç Öğrenci Yurdu
+Iğdır,Iğdır Öğrenci Yurdu
+Iğdır,Selman-ı Farisi Öğrenci Yurdu
+Iğdır,Süreyya Sülün Hanım Öğrenci Yurdu
+Kahramanmaraş,Afşin Öğrenci Yurdu
+Kahramanmaraş,Elbistan Yurdu
+Kahramanmaraş,Erdem Bayazıd Öğrenci Yurdu
+Kahramanmaraş,Göksun Yurdu
+Kahramanmaraş,Kahramanmaraş Avşar Öğrenci Öğrenci Yurdu
+Kahramanmaraş,Kahramanmaraş Yurdu
+Kahramanmaraş,Sütçü İmam Öğrenci Yurdu
+Karabük,Aişe Ana Öğrenci Yurdu
+Karabük,Asiye Hatun Öğrenci Yurdu
+Karabük,Eskipazar Yurdu
+Karabük,Hubbi Hatun Öğrenci Yurdu
+Karabük,Karabük - Bahaddin Gazi Yurdu
+Karabük,Karabük - Taşkent Öğrenci Yurdu
+Karabük,Karabük Yurdu
+Karabük,Katip Çelebi Yurdu
+Karabük,İsmail Necati Efendi Öğrenci Yurdu
+Karaman,Ermenek Öğrenci Yurdu
+Karaman,Hatuniye Öğrenci Yurdu
+Karaman,Karaman Piri Reis Öğrenci Yurdu
+Karaman,Karaman Yurdu
+Karaman,Karamanoğlu Mehmetbey Öğrenci Yurdu
+Karaman,Mehmet Emin Paşa Öğrenci Yurdu
+Karaman,Nefise Sultan Öğrenci Yurdu
+Kars,Kars Yurdu
+Kars,Kars - Hasan Harakani Öğrenci Yurdu
+Kars,Kağızman Öğrenci Yurdu
+Kars,Murat Çobanoğlu Öğrenci Yurdu
+Kars,Nuri Paşa Öğrenci Yurdu
+Kars,Sarıkamış 100. Yıl Şehitleri Öğrenci Yurdu
+Kars,Serhat Öğrenci Yurdu
+Kars,İpekyolu Öğrenci Yurdu
+Kars,Şeref Taşlıova Öğrenci Yurdu
+Kastamonu,Abana Öğrenci Yurdu
+Kastamonu,Baharzade Feride Hanım Öğrenci Yurdu
+Kastamonu,Fatma Aliye Hanım Öğrenci Yurdu
+Kastamonu,Kastamonu Hüma Hatun Öğrenci Yurdu
+Kastamonu,Kastamonu Yurdu
+Kastamonu,Rabia Gülnuş Öğrenci Yurdu
+Kastamonu,Şeyh Şaban-ı Veli Öğrenci Yurdu
+Kayseri,Develi Yurdu
+Kayseri,Erciyes Yurdu
+Kayseri,Gevher Nesibe Yurdu
+Kayseri,Hunat Hatun Öğrenci Yurdu
+Kayseri,Kayseri Öğrenci Yurdu
+Kayseri,Kocasinan Yurdu
+Kayseri,Melikgazi Kız Öğrenci Yurdu
+Kayseri,Mustafa Asım Köksal
+Kayseri,Pertevniyal Sultan
+Kayseri,Pınarbaşı Öğrenci Yurdu
+Kayseri,Seyyid Burhaneddin Öğrenci Yurdu
+Kayseri,Şule Yüksel Şenler Yurdu
+Kilis,Bilal-i Habeşi Öğrenci Yurdu
+Kilis,Kartal Bey Öğrenci Yurdu
+Kilis,Kilis Kız Öğrenci Yurdu
+Kilis,Kilis Yurdu
+Kilis,Mercidabık Öğrenci Yurdu
+Kilis,Muhammed Bedevi Öğrenci Yurdu
+Kilis,Nakşidil Valide Sultan Öğrenci Yurdu
+Kocaeli,Ali Fuat Cebesoy Öğrenci Yurdu
+Kocaeli,Can Feda Hatun Öğrenci Yurdu
+Kocaeli,Fatma Seher Hanım Öğrenci Yurdu
+Kocaeli,Gazi Süleyman Paşa Öğrenci Yurdu
+Kocaeli,Gebze Öğrenci Yurdu
+Kocaeli,Gölcük Öğrenci Yurdu
+Kocaeli,Kandıra - İl Özel İdaresi Yurdu
+Kocaeli,Karamürsel - Gazanfer Bilge Öğrenci Yurdu
+Kocaeli,Kartepe Öğrenci Yurdu
+Kocaeli,Kocaeli Vilayetler Hizmet Birliği Yurdu
+Kocaeli,Kocaeli Zekiye Gündoğdu Yurdu
+Kocaeli,Kocaeli Öğrenci Yurdu
+Kocaeli,Pertevpaşa Öğrenci Yurdu
+Kocaeli,Samiha Ayverdi Öğrenci Yurdu
+Kocaeli,Sultan Baba Öğrenci Yurdu
+Kocaeli,Şerife Gelin Öğrenci Yurdu
+Konya,Akören Yurdu
+Konya,Akşehir Yurdu
+Konya,Alaaddin Yurdu
+Konya,Ali Ulvi Kurucu Yurdu
+Konya,Beyhekim Öğrenci Yurdu
+Konya,Beyşehir Yurdu
+Konya,Bozkır - Mustafa - Suna Öz Yurdu
+Konya,Cihanbeyli Öğrenci Yurdu
+Konya,Cumhuriyet Yurdu
+Konya,Ereğli Erkek Yurdu
+Konya,Ereğli Kız Yurdu
+Konya,Eşrefoğlu Öğrenci Yurdu
+Konya,Fahrünnisa Hatun Yurdu
+Konya,Hadim Yurdu
+Konya,Ilgın Öğrenci Yurdu
+Konya,Kadınhanı - f. Ali - Fatma S. İçil Yurdu
+Konya,Konya Kız Yurdu
+Konya,Konya - Kimya Hatun Kız Yurdu
+Konya,Konya - Şems-i Tebrizi Öğrenci Yurdu
+Konya,Kutalmışoğlu Süleyman Şah Öğrenci Yurdu
+Konya,Mehmet Vehbi Çelik Öğrenci Yurdu
+Konya,Melike Cihan Öğrenci Yurdu
+Konya,Melike Hatun Yurdu
+Konya,Mesnevi Öğrenci Yurdu
+Konya,Mevlana Kız Yurdu
+Konya,Nasreddin Hoca Öğrenci Yurdu
+Konya,Sadreddin Konevi Öğrenci Yurdu
+Konya,Seydişehir Yurdu
+Konya,Sultan Veled Öğrenci Yurdu
+Konya,Tahir Büyükkörükçü Öğrenci Yurdu
+Konya,Taşkent Öğrenci Yurdu
+Konya,Çumra Yurdu
+Kütahya,Arslan Bey Öğrenci Yurdu
+Kütahya,Devlet Hatun Öğrenci Yurdu
+Kütahya,Dumlupınar Öğrenci Yurdu
+Kütahya,Emet Öğrenci Yurdu
+Kütahya,Emine Gülbahar Hatun Öğrenci Yurdu
+Kütahya,Gediz Yurdu
+Kütahya,Hayme Ana Öğrenci Yurdu
+Kütahya,Hezar Dinari Öğrenci Yurdu
+Kütahya,Kütahya Yesevi Öğrenci Yurdu
+Kütahya,Kütahya - Zafertepe Öğrenci Yurdu
+Kütahya,Simav Öğrenci Yurdu
+Kütahya,İslamoğlu Öğrenci Yurdu
+Kırklareli,Ahmet Cevdet Paşa Öğrenci Yurdu
+Kırklareli,Babaeski Öğrenci Yurdu
+Kırklareli,Evladı Fatihan Öğrenci Yurdu
+Kırklareli,Hundi Hatun Öğrenci Yurdu
+Kırklareli,Kırklareli Yurdu
+Kırklareli,Lüleburgaz Öğrenci Yurdu
+Kırklareli,Mehmed Eşref Efendi Öğrenci Yurdu
+Kırklareli,Şemsettin Sami Öğrenci Yurdu
+Kırıkkale,Hamidiye Öğrenci Yurdu
+Kırıkkale,Kaletepe Öğrenci Yurdu
+Kırıkkale,Keskin Yurdu
+Kırıkkale,Kırıkkale Hatice Hanım Öğrenci Yurdu
+Kırıkkale,Kırıkkale - Kızılırmak Kız Öğrenci Yurdu
+Kırıkkale,Türkan Hatun Öğrenci Yurdu
+Kırıkkale,Ümmü Hatun Öğrenci Yurdu
+Kırşehir,Ahi Evran Kız Öğrenci Yurdu
+Kırşehir,Elvin Buğra Arslan Öğrenci Yurdu
+Kırşehir,Erol Güngör Yurdu
+Kırşehir,Fatma Bacı Öğrenci Yurdu
+Kırşehir,Kaman Öğrenci Yurdu
+Kırşehir,Kırşehir Yurdu
+Kırşehir,Mecidiye Öğrenci Yurdu
+Kırşehir,Saliha Sultan Yurdu
+Malatya,Arapgir Yurdu
+Malatya,Battalgazi Öğrenci Yurdu
+Malatya,Beydağı Yurdu
+Malatya,Eşref Bitlis Öğrenci Yurdu
+Malatya,Hacı Hafize Özal Kız Öğr. Yurdu
+Malatya,Malatya Kız Yurdu
+Malatya,Somuncu Baba Yurdu
+Malatya,İlhan Akıncı Öğrenci Yurdu
+Manisa,Alaşehir Yurdu
+Manisa,Ayşe Hafsa Sultan Yurdu
+Manisa,Demirci Yurdu
+Manisa,Gördes Molla Gürani Yurdu
+Manisa,Hatice Hayriye Turgutlu Öğrenci Yurdu
+Manisa,Kula Öğrenci Yurdu
+Manisa,Köprübaşı Öğrenci Yurdu
+Manisa,Kırkağaç Öğrenci Yurdu
+Manisa,Manisa Yunus Emre Yurdu
+Manisa,Manisa Yurdu
+Manisa,Manisa - Muradiye Öğrenci Yurdu
+Manisa,Merkez Efendi Yurdu
+Manisa,Salihli Farabi Yurdu
+Manisa,Salihli Öğrenci Yurdu
+Manisa,Sarıgöl Öğrenci Yurdu
+Manisa,Soma Öğrenci Yurdu
+Manisa,Turgutlu - Sedat Özcan Yurdu
+Mardin,Aziz Sancar Öğrenci Yurdu
+Mardin,Kasımiye Öğrenci Yurdu
+Mardin,Mardin Kız Öğrenci Yurdu
+Mersin,Anamur Öğrenci Yurdu
+Mersin,Erdemli Kız Kalesi Öğrenci Yurdu
+Mersin,Kırkkaşık Öğrenci Yurdu
+Mersin,Mersin Kız Öğrenci Yurdu
+Mersin,Mersin - Yenişehir Öğrenci Yurdu
+Mersin,Tarsus Kız Öğrenci Yurdu
+Mersin,Tarsus Yurdu
+Muğla,Fethiye S. M. Koçman Yurdu
+Muğla,Milas Öğrenci Yurdu
+Muğla,Muğla Erkek Yurdu
+Muğla,Muğla Milli Piyango Kız Yurdu
+Muğla,Muğla - Ortaca Yurdu
+Muğla,Turgut Reis Öğrenci Yurdu
+Muğla,Şahidi Kız Yurdu
+Muş,Danişmend Gazi Öğrenci Yurdu
+Muş,Malazgirt Öğrenci Yurdu
+Muş,Muş Muştak Baba Öğrenci Yurdu
+Muş,Sultan Alparslan Öğrenci Yurdu
+Nevşehir,Avanos Öğrenci Yurdu
+Nevşehir,Ayşe Hümaşah Sultan Yurdu
+Nevşehir,Fatıma Sultan Öğrenci Yurdu
+Nevşehir,Gülşehir Öğrenci Yurdu
+Nevşehir,Hacı Bektaş-ı Veli Yurdu
+Nevşehir,Haluk Nur Baki Yurdu
+Nevşehir,Hünkar Öğrenci Yurdu
+Nevşehir,Kapadokya Öğrenci Yurdu
+Nevşehir,Nevşehir Yurdu
+Nevşehir,Urgup Öğrenci Yurdu
+Niğde,Ahmet Kuddusi Öğrenci Yurdu
+Niğde,Bor Yurdu
+Niğde,Fadimana Halisdemir Öğrenci Yurdu
+Niğde,Niğde Ertuğrulgazi Öğrenci Yurdu
+Niğde,Niğde Milli Piyango Yurdu
+Niğde,Sultan I. Kılıçarslan Öğrenci Yurdu
+Niğde,Sultan II. Kılıçarslan Öğrenci Yurdu
+Niğde,Ulukışla Öğrenci Yurdu
+Niğde,Ömer Halisdemir Öğrenci Yurdu
+Ordu,Evliya Çelebi Öğrenci Yurdu
+Ordu,Fatsa Öğrenci Yurdu
+Ordu,Mehmet Fuad Köprülü Yurdu
+Ordu,Ordu Lebibe - Ergin Karlıbelöğr. Yurdu
+Ordu,Ordu Yurdu
+Ordu,Ünye Yurdu
+Osmaniye,Kadirli Öğrenci Yurdu
+Osmaniye,Karacaoğlan Öğrenci Yurdu
+Osmaniye,Kayıboyu Öğrenci Yurdu
+Osmaniye,Osmaniye Yurdu
+Rize,Ahmet Tevfik İleri Yurdu
+Rize,Ardeşen Öğrenci Yurdu
+Rize,Ayder Öğrenci Yurdu
+Rize,Derepazarı Kaptan Arif Bayraktar
+Rize,Devlet Hatun Yurdu
+Rize,Fındıklı Yurdu
+Rize,Pazar Öğrenci Yurdu
+Rize,Rize Yeşilçay Yurdu
+Rize,Rize Yurdu
+Rize,Tenzile Erdoğan Yurdu
+Rize,Çayeli - A. Mesut Yılmaz Yurdu
+Sakarya,Abdurrahman Gürses Öğrenci Yurdu
+Sakarya,Akyazı Öğrenci Yurdu
+Sakarya,Arif Nihat Asya Öğrenci Yurdu
+Sakarya,Ayşe Hümeyra Ökten Öğrenci Yurdu
+Sakarya,Geyve Öğrenci Yurdu
+Sakarya,Hendek Yurdu
+Sakarya,Karasu Öğrenci Yurdu
+Sakarya,Muhammet Fatih Safitürk Öğrenci Yurdu
+Sakarya,Rahime Sultan Öğrenci Yurdu
+Sakarya,Sabahattin Zaim Öğrenci Yurdu
+Sakarya,Sakarya Yurdu
+Sakarya,Sapanca Öğrenci Yurdu
+Samsun,Alaçam Öğrenci Yurdu
+Samsun,Ali Fuat Başgil Yurdu
+Samsun,Atakum Yurdu
+Samsun,Bafra Milli Piyango Yurdu
+Samsun,Canik Öğrenci Yurdu
+Samsun,Cemal Safi Öğrenci Yurdu
+Samsun,Gülcemal Hatun Yurdu
+Samsun,Havza Yurdu
+Samsun,Karadeniz Yurdu
+Samsun,Kavak Öğrenci Yurdu
+Samsun,Münevver Ayaşlı Yurdu
+Samsun,Ondokuz Mayıs Yurdu
+Samsun,Samsun Kız Öğrenci Yurdu
+Samsun,Terme Yurdu
+Samsun,Turgut Özal Öğrenci Yurdu
+Samsun,Vezirköprü Yurdu
+Samsun,Çarşamba Öğrenci Yurdu
+Samsun,İlkadım Yurdu
+Siirt,Esmehan Sultan Öğrenci Yurdu
+Siirt,Hassa Hatun Öğrenci Yurdu
+Siirt,Kurtalan Öğrenci Yurdu
+Siirt,Siirt Erkek Öğrenci Yurdu
+Siirt,İsmail Fakirullah Öğrenci Yurdu
+Sinop,Ayancık Öğrenci Yurdu
+Sinop,Boyabat Öğrenci Yurdu
+Sinop,Mahmud Kefevi Öğrenci Yurdu
+Sinop,Seyyid İbrahim Bilal Öğrenci Yurdu
+Sinop,Sinop Yurdu
+Sivas,Gürün - Enver Bostancı Öğr. Yurdu
+Sivas,Hafik Öğrenci Yurdu
+Sivas,Kadı Burhanettin Öğrenci Yurdu
+Sivas,Kızılırmak Öğrenci Yurdu
+Sivas,Sivas Sancaktar Yurdu
+Sivas,Suşehri Yurdu
+Sivas,Tecer Öğrenci Yurdu
+Sivas,Yıldız Öğrenci Yurdu
+Sivas,Yıldızeli Yurdu
+Sivas,Zara Öğrenci Yurdu
+Sivas,İzzeddin Keykavus Öğrenci Yurdu
+Sivas,Şarkışla Muhsin Yazıcıoğlu Öğrenci Yurdu
+Sivas,Şemseddin Sivasi Öğrenci Yurdu
+Tekirdağ,Günebakan Öğrenci Yurdu
+Tekirdağ,Hacı İlbeyi Öğrenci Yurdu
+Tekirdağ,Hayrabolu Yurdu
+Tekirdağ,Süleymanpaşa Öğrenci Yurdu
+Tekirdağ,Tekirdağ Yurdu
+Tekirdağ,Çorlu Erkek Öğrenci Yurdu
+Tekirdağ,Çorlu Yurdu
+Tokat,Ali Paşa Yurdu
+Tokat,Artova Yurdu
+Tokat,Aydoğan Aydın Öğrenci Yurdu
+Tokat,Ballıca Öğrenci Yurdu
+Tokat,Erbaa Yurdu
+Tokat,Gülsüm Ana Öğrenci Yurdu
+Tokat,Mehmed Emin Tokadi Yurdu
+Tokat,Niksar Yurdu
+Tokat,Plevne Öğrenci Yurdu
+Tokat,Reşadiye Öğrenci Yurdu
+Tokat,Tokat Öğrenci Yurdu
+Tokat,Tokat İbn-i Kemal Öğrenci Yurdu
+Tokat,Tokat - Gaziosmanpaşa Yurdu
+Tokat,Turhal Yurdu
+Tokat,Zile Yurdu
+Tokat,Şeyh-i Şirvani Öğrenci Yurdu
+Trabzon,Adnan Demirtürk Yurdu
+Trabzon,Ahmet Yaşar Efendi Yurdu
+Trabzon,Akçaabat - Fatih Yurdu
+Trabzon,Beşikdüzü Öğrenci Yurdu
+Trabzon,Fuat Sezgin Yurdu
+Trabzon,Gülbahar Hatun Yurdu
+Trabzon,Hamdiye Yıldırım Öğrenci Yurdu
+Trabzon,Maçka - Şukru Karadeniz Öğr. Yurd
+Trabzon,Münür Özkurt Öğrenci Yurdu
+Trabzon,Of Aşıkkutlu Öğrenci Yurdu
+Trabzon,Ortahisar Öğrenci Yurdu
+Trabzon,Sare Hatun Yurdu
+Trabzon,Tonya Öğrenci Yurdu
+Trabzon,Trabzon Yurdu
+Trabzon,Trabzon - Doğu Karadeniz Yurdu
+Trabzon,Yomra Öğrenci Yurdu
+Trabzon,Yomra - Kanuni Yurdu
+Trabzon,İsminaz Kanca Yurdu
+Tunceli,Ehlibeyt Yurdu
+Tunceli,Munzur Öğrenci Yurdu
+Tunceli,Tunceli Yurdu
+Uşak,Latife Hanım Öğrenci Yurdu
+Uşak,Mehmet Hacım Öğrenci Yurdu
+Uşak,Uşak Erkek Öğrenci Yurdu
+Uşak,Uşak Kız Yurdu
+Van,Aişe Sıddıka Yurdu
+Van,Amine Hatun Yurdu
+Van,Erciş Yurdu
+Van,Gevaş Öğrenci Yurdu
+Van,Melikşah Yurdu
+Van,Seyyid Fehim Arvasi Yurdu
+Van,Süleyman Şah Öğrenci Yurdu
+Van,Van Öğrenci Yurdu
+Van,Özalp Yurdu
+Van,Ümmü Eymen Yurdu
+Van,İmam Şafii Yurdu
+Yalova,Dilşad Hatun Öğrenci Yurdu
+Yalova,Termal Öğrenci Yurdu
+Yalova,Yalova Yurdu
+Yalova,Çınarcık Öğrenci Yurdu
+Yozgat,Ahmet Efendi Yurdu
+Yozgat,Akdağmadeni Yurdu
+Yozgat,Bozok Yurdu
+Yozgat,Kınalı Hasan Öğrenci Yurdu
+Yozgat,Yerköy Molla Hüsrev Yurdu
+Yozgat,Yozgat Sürmeli Öğrenci Yurdu
+Yozgat,Yozgat Yurdu
+Yozgat,Yozgat - Esentepe Öğr. Yurdu
+Yozgat,Çamlık Öğrenci Yurdu
+Zonguldak,Abdullah Sabri Efendi Öğrenci Yurdu
+Zonguldak,Alaplı Öğrenci Yurdu
+Zonguldak,Devrek Sos. Yar. Day. Vak. Öğr. Yurdu
+Zonguldak,Hatice Turhan Sultan Yurdu
+Zonguldak,Karadeniz Ereğli Yurdu
+Zonguldak,Nesibe Hatun Öğrenci Yurdu
+Zonguldak,Zonguldak Yurdu
+Zonguldak,Zonguldak - Karaelmas Yurdu
+Zonguldak,Çaycuma Yurdu
+Zonguldak,İbrahim Ethem Yurdu
+Çanakkale,Adile Sultan Öğrenci Yurdu
+Çanakkale,Ahmet Bican Öğrenci Yurdu
+Çanakkale,Biga Öğrenci Yurdu
+Çanakkale,Gökçeada Öğrenci Yurdu
+Çanakkale,Kerime Sultan Yurdu
+Çanakkale,Nusrat Öğrenci Yurdu
+Çanakkale,Onsekiz Mart Öğrenci Yurdu
+Çanakkale,Safiye Hüseyin Öğrenci Yurdu
+Çanakkale,Terzioğlu Kız Öğrenci Yurdu
+Çanakkale,Çan Öğrenci Yurdu
+Çanakkale,Çanakkale Kız Öğrenci Yurdu
+Çankırı,Emir Karatekin Öğrenci Yurdu
+Çankırı,Hacı Murat Veli Öğrenci Yurdu
+Çankırı,Sabiha Anne Öğrenci Yurdu
+Çankırı,Çankırı Yurdu
+Çorum,Alaca Yurdu
+Çorum,Hayrettin Karaman Yurdu
+Çorum,Hitit Öğrenci Yurdu
+Çorum,Kerebi Gazi Öğrenci Yurdu
+Çorum,Osmancık Yurdu
+Çorum,Sungurlu Öğrenci Yurdu
+Çorum,İskilip Öğrenci Yurdu
+Çorum,İskilipli Atıf Hoca Yurdu
+İstanbul,1453 Öğrenci Yurdu
+İstanbul,Akkadın H. M. Tarman Kız Yurdu
+İstanbul,Anadolu Hisarı Yurdu
+İstanbul,Atatürk Öğrenci Yurdu
+İstanbul,Avcılar - Atatürk Kız Yurdu
+İstanbul,Bahçeköy Yurdu
+İstanbul,Edirnekapı Kız Öğrenci Yurdu
+İstanbul,Esenyurt Erkek Öğrenci Yurdu
+İstanbul,Esenyurt Kız Öğrenci Yurdu
+İstanbul,Fatih Sultan Mehmet Öğrenci Yurdu
+İstanbul,Florya - Beşyol Öğrenci Yurdu
+İstanbul,Kadırga Erkek Öğrenci Yurdu
+İstanbul,Kanuni Sultan Süleyman Yurdu
+İstanbul,Mahir İz Öğrenci Yurdu
+İstanbul,Mimar Sinan Öğrenci Yurdu
+İstanbul,Sadabad Öğrenci Yurdu
+İstanbul,Vali Muammer Güler Yurdu
+İstanbul,Vezneciler Yurdu
+İstanbul,Çemberlitaş Yurdu
+İstanbul,İyimaya Öğrenci Yurdu
+İstanbul,Şişli Erkek Öğrenci Yurdu
+İzmir,Atatürk (İnciraltı) Yurdu
+İzmir,Bornova Yurdu
+İzmir,Buca Kız Yurdu
+İzmir,Cihannüma Yurdu
+İzmir,Ege Öğrenci Yurdu
+İzmir,Gazi Ayşe Hanım Öğrenci Yurdu
+İzmir,Gazi Umurbey Öğrenci Yurdu
+İzmir,Hacı Ahmet Tatari Yurdu
+İzmir,Hacı Sinan Öğrenci Yurdu
+İzmir,Hanzade Hatun Öğrenci Yurdu
+İzmir,Hoca Ahmet Yesevi Yurdu (İzmir)
+İzmir,Urla Latife Hanım Yurdu
+İzmir,Urla Yurdu
+İzmir,Yörük Ali Efe Öğrenci Yurdu
+İzmir,Zübeyde Hanım Öğrenci Yurdu
+İzmir,Çakabey Yurdu
+İzmir,Çeşme Yurdu
+İzmir,Çiğli Öğrenci Yurdu
+İzmir,İzmir Barbaros Öğrenci Yurdu
+İzmir,İzmir Gaziemir Öğrenci Yurdu
+İzmir,İzmir Kız Öğrenci Yurdu
+Şanlıurfa,Göbeklitepe Öğrenci Yurdu
+Şanlıurfa,Hacer Ana Öğrenci Yurdu
+Şanlıurfa,Harran Yurdu (Ş. Urfa)
+Şanlıurfa,Mehmet Akif İnan Öğrenci Yurdu
+Şanlıurfa,Şanlıurfa Yurdu
+Şanlıurfa,Şifa Hatun Öğrenci Yurdu
+Şırnak,Cezeri Yurdu
+Şırnak,Şırnak Yurdu

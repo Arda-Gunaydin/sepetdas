@@ -1,0 +1,20 @@
+import { notFound } from "next/navigation";
+import { requireProfile, type CurrentProfile } from "@/lib/auth";
+
+/** Yönetici değilse 404. Asıl yetki kontrolü veritabanında (RLS / admin_* fonksiyonları). */
+export async function requireAdmin(): Promise<CurrentProfile> {
+  const profile = await requireProfile();
+  if (!profile.is_admin) notFound();
+  return profile;
+}
+
+/** İstanbul'a göre bugünün başlangıcı (UTC ISO). Türkiye 2016'dan beri sabit UTC+3. */
+export function istanbulDayStartIso(now = new Date()): string {
+  const day = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Istanbul" }).format(now);
+  return new Date(`${day}T00:00:00+03:00`).toISOString();
+}
+
+/** PostgREST ilike filtresi için kullanıcı girdisini kaçışlar. */
+export function likePattern(q: string): string {
+  return `%${q.replace(/[\\%_,()]/g, (c) => `\\${c}`)}%`;
+}
