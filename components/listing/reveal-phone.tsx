@@ -19,7 +19,7 @@ export function RevealPhone({ listingId, restaurant, ownerFirstName }: Props) {
     return (
       <div className="flex flex-col gap-3" aria-live="polite">
         <p className="text-center text-2xl font-extrabold tracking-wide tabular-nums">{formatPhone(phone)}</p>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2">
           <a href={telLink(phone)} className={buttonClasses("accent", "lg")}>
             <Phone className="size-5" aria-hidden />
             Ara

@@ -32,8 +32,13 @@ const steps = [
 ];
 
 export default async function Home({ searchParams }: PageProps<"/">) {
-  if (await getUserId()) redirect("/pano");
   const params = await searchParams;
+  // Supabase dönüş adresi izinli listede yoksa Google girişi "Site URL"ye (ana sayfa) ?code= ile döner.
+  // Aynı alan adındaysak girişi tamamlamak için callback'e aktar.
+  if (typeof params.code === "string" && /^[\w-]{8,200}$/.test(params.code)) {
+    redirect(`/auth/callback?code=${encodeURIComponent(params.code)}`);
+  }
+  if (await getUserId()) redirect("/pano");
 
   return (
     <main className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-10 px-4 pt-6 pb-10">
