@@ -58,6 +58,7 @@ export default function KvkkPage() {
           <li>Cep telefonu numaran</li>
           <li>Açtığın ilanların içeriği (restoran, platform, tutar, açıklama) ve açılış / bitiş zamanları</li>
           <li>Hangi ilanın numarasını ne zaman açtığının kaydı</li>
+          <li>Siteyi en son ne zaman kullandığın (yalnızca yönetici görür; diğer kullanıcılar görmez)</li>
           <li>Gönderdiğin şikayetler, yurt ekleme ve numara sahipliği talepleri</li>
           <li>Açık rıza verdiğin tarih ve saat</li>
           <li>Oturumunu açık tutmak için gereken teknik çerezler</li>
@@ -89,7 +90,9 @@ export default function KvkkPage() {
           </li>
           <li>
             <strong>Yönetici:</strong> şikayetleri, askıya alınan hesapları ve talepleri incelemek için gereken bilgiler;
-            kötüye kullanımı inceleyebilmek için süresi dolmuş ve kapanmış ilanlar ile numara açma kayıtları dahil.
+            kötüye kullanımı inceleyebilmek için süresi dolmuş ve kapanmış ilanlar ile numara açma kayıtları dahil. Yönetici,
+            seninle iletişime geçmesi gerektiğinde (ör. şikayet veya numara sahipliği talebi) e-posta adresini de görebilir;
+            telefon numaranı görmez.
           </li>
           <li>
             <strong>Hizmet sağlayıcılar:</strong> veriler, altyapı hizmeti aldığımız Supabase (veritabanı ve kimlik doğrulama),
@@ -106,7 +109,7 @@ export default function KvkkPage() {
           ve senden kaldırılır, ancak kötüye kullanım incelemesi için hesabın açık olduğu sürece yalnızca yöneticinin
           görebileceği şekilde saklanır. Diğer verilerin de hesabın açık olduğu sürece saklanır. <strong>Profil → &quot;Hesabımı ve verilerimi sil&quot;</strong>{" "}
           butonuyla hesabını istediğin an silebilirsin. Silme işlemi geri alınamaz: profilin, telefon numaran, ilanların,
-          numara görüntüleme kayıtların ve şikayet kayıtların kalıcı olarak silinir.
+          numara görüntüleme kayıtların, son görülme bilgin ve şikayet kayıtların kalıcı olarak silinir.
         </p>
       </Section>
 

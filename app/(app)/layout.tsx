@@ -1,5 +1,6 @@
 import { ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import { Heartbeat } from "@/components/heartbeat";
 import { BottomNav } from "@/components/ui/bottom-nav";
 import { Disclaimer } from "@/components/ui/disclaimer";
 import { Logo } from "@/components/ui/logo";
@@ -44,6 +45,7 @@ export default async function AppLayout({ children }: LayoutProps<"/">) {
       </main>
 
       <BottomNav />
+      <Heartbeat />
     </div>
   );
 }

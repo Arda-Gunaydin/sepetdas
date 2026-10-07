@@ -470,6 +470,7 @@ test("hesap silinince profil, telefon, ilanlar ve kayıtlar tamamen siliniyor", 
     await reveal(other, listingId);
 
     await asUser(user.id);
+    await client.query("select public.touch_last_seen()");
     await client.query("select public.delete_my_account()");
 
     await asSystem();
@@ -479,6 +480,7 @@ test("hesap silinince profil, telefon, ilanlar ve kayıtlar tamamen siliniyor", 
       ["select 1 from public.profile_private where user_id = $1", [user.id]],
       ["select 1 from public.listings where owner_id = $1", [user.id]],
       ["select 1 from public.phone_reveals where viewer_id = $1 or listing_id = $2", [user.id, listingId]],
+      ["select 1 from public.user_activity where user_id = $1", [user.id]],
     ]) {
       assert.equal((await client.query(sql, args)).rowCount, 0, sql);
     }
@@ -500,6 +502,61 @@ test("yurt istatistiklerini sadece yönetici görebiliyor", () =>
     const r = await client.query("select * from public.admin_dorm_stats(100) where dorm_id = $1", [dorm]);
     assert.equal(Number(r.rows[0].user_count), 2);
     assert.equal(Number(r.rows[0].active_listing_count), 1);
+  }));
+
+test("kullanıcının e-postasını sadece yönetici görebiliyor", () =>
+  tx(async () => {
+    const dorm = await createDorm("A");
+    const admin = await createUser(dorm);
+    const user = await createUser(dorm);
+    await asSystem();
+    await client.query("update public.profiles set is_admin = true where id = $1", [admin.id]);
+
+    await asUser(user.id);
+    await rejects(sp(() => client.query("select public.admin_user_email($1)", [admin.id])), /not_admin/);
+    await rejects(sp(() => client.query("select email from auth.users where id = $1", [admin.id])), /permission denied|42501/);
+
+    await asUser(admin.id);
+    const r = await client.query("select public.admin_user_email($1) as email", [user.id]);
+    assert.equal(r.rows[0].email, `${user.id}@test.local`);
+  }));
+
+test("son görülme kaydediliyor; sadece yönetici okuyabiliyor, kimse doğrudan yazamıyor", () =>
+  tx(async () => {
+    const dorm = await createDorm("A");
+    const admin = await createUser(dorm);
+    const user = await createUser(dorm);
+    await asSystem();
+    await client.query("update public.profiles set is_admin = true where id = $1", [admin.id]);
+
+    await asUser(user.id);
+    await client.query("select public.touch_last_seen()");
+    // Kullanıcı kendisininki dahil hiçbir son görülme kaydını okuyamaz, doğrudan yazamaz.
+    assert.equal((await client.query("select 1 from public.user_activity")).rowCount, 0);
+    await rejects(sp(() => client.query("insert into public.user_activity (user_id) values ($1)", [user.id])), /permission denied|42501/);
+    await rejects(sp(() => client.query("update public.user_activity set last_seen_at = now()")), /permission denied|42501/);
+
+    await asUser(admin.id);
+    const r = await client.query("select last_seen_at from public.user_activity where user_id = $1", [user.id]);
+    assert.equal(r.rowCount, 1);
+
+    // Dakikada en fazla bir yazma: eski kayıt güncellenir, yeni kayıt güncellenmez.
+    await asSystem();
+    await client.query("update public.user_activity set last_seen_at = now() - interval '10 minutes' where user_id = $1", [user.id]);
+    await asUser(user.id);
+    await client.query("select public.touch_last_seen()");
+    await asSystem();
+    const fresh = await client.query("select last_seen_at > now() - interval '1 minute' as ok from public.user_activity where user_id = $1", [user.id]);
+    assert.equal(fresh.rows[0].ok, true);
+    await client.query("update public.user_activity set last_seen_at = now() - interval '10 seconds' where user_id = $1", [user.id]);
+    await asUser(user.id);
+    await client.query("select public.touch_last_seen()");
+    await asSystem();
+    const throttled = await client.query("select last_seen_at < now() - interval '5 seconds' as ok from public.user_activity where user_id = $1", [user.id]);
+    assert.equal(throttled.rows[0].ok, true);
+
+    await asUser(null);
+    await rejects(sp(() => client.query("select public.touch_last_seen()")), /not_authenticated/);
   }));
 
 test("yönetici yurt ekler / düzenler / pasifleştirir / siler; kullanıcı yapamaz", () =>

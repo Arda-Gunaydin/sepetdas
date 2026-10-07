@@ -114,6 +114,10 @@ Süre dolması için zamanlanmış görev **kullanma**; aktif ilan = `status = '
 
 `id`, `listing_id`, `viewer_id`, `created_at` — numarayı kimin açtığının kaydı; hız sınırı ve kötüye kullanım incelemesi için.
 
+### 5.4.1 `user_activity`
+
+`user_id` (PK, `profiles` → CASCADE), `last_seen_at` — yönetici panelindeki "çevrim içi" durumu için. Açık sekme dakikada bir `touch_last_seen()` RPC'sini çağırır (`components/heartbeat.tsx`, sekme arka plandaysa çağırmaz); fonksiyon en fazla ~dakikada bir yazar. Çevrim içi = `last_seen_at` son 2 dakika içinde (`lib/admin.ts`). Sadece yönetici okur (RLS); diğer kullanıcılar birbirinin çevrim içi durumunu göremez. Ayrı tablodadır çünkü `profiles`'ı aynı yurttakiler okuyabilir.
+
 ### 5.5 `reports`
 
 `id`, `reporter_id`, `listing_id`, `reported_user_id`, `reason` (`wrong_number` | `not_their_number` | `spam` | `inappropriate` | `other`), `note`, `status` (`open` | `resolved`), `created_at`
@@ -179,9 +183,9 @@ Aynı kişi aynı kullanıcıyı bir kez şikayet edebilir.
 | `/ilanlarim` | Kendi ilanlarım; kapat / eşleşti |
 | `/profil` | Bilgileri düzenle, hesabı sil |
 | `/kvkk` | Aydınlatma metni |
-| `/admin` | Yönetici paneli (ayrı düzen, sadece `is_admin`): genel bakış sayıları, en kalabalık yurtlar, son ilanlar |
-| `/admin/kullanicilar` | Kullanıcı listesi: isim arama, il / yurt / durum filtresi, ilan sayısı |
-| `/admin/kullanicilar/[id]` | Kullanıcı detayı: bilgiler, verdiği tüm ilanlar, şikayet geçmişi, askıya alma / engelleme (telefon gösterilmez) |
+| `/admin` | Yönetici paneli (ayrı düzen, sadece `is_admin`): genel bakış sayıları (şu an çevrim içi dahil), en kalabalık yurtlar, son ilanlar |
+| `/admin/kullanicilar` | Kullanıcı listesi: isim arama, il / yurt / durum (çevrim içi dahil) filtresi, ilan sayısı, çevrim içi noktası |
+| `/admin/kullanicilar/[id]` | Kullanıcı detayı: bilgiler, çevrim içi / son görülme, e-posta (iletişim için, `admin_user_email` RPC), verdiği tüm ilanlar, şikayet geçmişi, askıya alma / engelleme (telefon gösterilmez) |
 | `/admin/ilanlar` | Geçmiş ve şimdiki tüm ilanlar, durum filtresi, numara açma sayısı |
 | `/admin/sikayetler` | Açık / çözülen şikayetler |
 | `/admin/talepler` | Yurt ekleme ve numara sahipliği talepleri |
@@ -211,6 +215,8 @@ Aynı kişi aynı kullanıcıyı bir kez şikayet edebilir.
 | `npm run test:db` | RLS / `reveal_phone` / iş kuralı testleri (`tests/db/`, her test işlem içinde koşup geri alınır) |
 
 Ortam değişkenleri `.env.example`'da. `SUPABASE_DB_URL` sadece scriptler/testler içindir, Vercel'e eklenmez.
+
+**Yayın:** GitHub `Arda-Gunaydin/sepetdas` → Vercel projesi `sepetdas` (takım `burslistele`), canlı adres **https://sepetdas.vercel.app**. `main`'e her push otomatik yayına çıkar. Vercel'de sadece `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_SITE_URL` var. Supabase Auth → Site URL `https://sepetdas.vercel.app`; Redirect URLs: `https://sepetdas.vercel.app/auth/callback`, `http://localhost:3000/auth/callback`. Google OAuth uygulaması şu an "Testing" modunda (sadece test kullanıcıları girebilir); herkese açmadan önce Google Auth Platform → Audience → Publish app.
 
 ## 11. Yapım sırası
 

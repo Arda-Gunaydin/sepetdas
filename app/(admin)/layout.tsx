@@ -1,6 +1,7 @@
 import { ArrowLeft, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { AdminNav } from "@/components/admin/admin-nav";
+import { Heartbeat } from "@/components/heartbeat";
 import { Logo } from "@/components/ui/logo";
 import { requireAdmin } from "@/lib/admin";
 import { createClient } from "@/lib/supabase/server";
@@ -44,6 +45,7 @@ export default async function AdminLayout({ children }: LayoutProps<"/">) {
         <AdminNav counts={{ reports: reports.count ?? 0, requests: (dormRequests.count ?? 0) + (claims.count ?? 0) }} />
         <main className="flex min-w-0 flex-col gap-5 pt-2 pb-12 lg:pt-5">{children}</main>
       </div>
+      <Heartbeat />
     </div>
   );
 }

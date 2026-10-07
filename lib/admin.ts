@@ -14,6 +14,18 @@ export function istanbulDayStartIso(now = new Date()): string {
   return new Date(`${day}T00:00:00+03:00`).toISOString();
 }
 
+/** Son görülmesi bu kadar yeni olan kullanıcı "çevrim içi" sayılır (sinyal dakikada bir gelir). */
+const ONLINE_WINDOW_MS = 2 * 60 * 1000;
+
+/** Çevrim içi eşiği (UTC ISO): last_seen_at bundan sonraysa çevrim içi. */
+export function onlineSinceIso(now = new Date()): string {
+  return new Date(now.getTime() - ONLINE_WINDOW_MS).toISOString();
+}
+
+export function isOnline(lastSeenAt: string | null | undefined, now = new Date()): boolean {
+  return !!lastSeenAt && new Date(lastSeenAt).getTime() > now.getTime() - ONLINE_WINDOW_MS;
+}
+
 /** PostgREST ilike filtresi için kullanıcı girdisini kaçışlar. */
 export function likePattern(q: string): string {
   return `%${q.replace(/[\\%_,()]/g, (c) => `\\${c}`)}%`;

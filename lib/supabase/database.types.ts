@@ -291,6 +291,29 @@ export type Database = {
           },
         ];
       };
+      user_activity: {
+        Row: {
+          last_seen_at: string;
+          user_id: string;
+        };
+        Insert: {
+          last_seen_at?: string;
+          user_id: string;
+        };
+        Update: {
+          last_seen_at?: string;
+          user_id?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "user_activity_user_id_fkey";
+            columns: ["user_id"];
+            isOneToOne: true;
+            referencedRelation: "profiles";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
     };
     Views: {
       [_ in never]: never;
@@ -320,6 +343,7 @@ export type Database = {
         Args: { p_status: Database["public"]["Enums"]["profile_status"]; p_user_id: string };
         Returns: undefined;
       };
+      admin_user_email: { Args: { p_user_id: string }; Returns: string };
       close_listing: {
         Args: { p_listing_id: string; p_status: Database["public"]["Enums"]["listing_status"] };
         Returns: undefined;
@@ -334,6 +358,7 @@ export type Database = {
       is_admin: { Args: never; Returns: boolean };
       my_dorm_id: { Args: never; Returns: number };
       reveal_phone: { Args: { p_listing_id: string }; Returns: string };
+      touch_last_seen: { Args: never; Returns: undefined };
     };
     Enums: {
       listing_platform: "yemeksepeti" | "getir" | "trendyol" | "migros" | "phone_order" | "other";

@@ -7,11 +7,11 @@ import { StatTile } from "@/components/admin/stat-tile";
 import { StatusButtons } from "@/components/admin/status-buttons";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { requireAdmin } from "@/lib/admin";
+import { isOnline, requireAdmin } from "@/lib/admin";
 import { formatTL, LISTING_TYPE_LABELS, PLATFORM_LABELS, PROFILE_STATUS_LABELS, REPORT_REASON_LABELS } from "@/lib/labels";
 import type { Enums } from "@/lib/supabase/database.types";
 import { createClient } from "@/lib/supabase/server";
-import { formatDateTime } from "@/lib/time";
+import { formatAgo, formatDateTime } from "@/lib/time";
 import { uuidSchema } from "@/lib/validation/schemas";
 
 export const metadata: Metadata = { title: "Kullanıcı" };
@@ -90,13 +90,14 @@ export default async function AdminUserPage({ params }: PageProps<"/admin/kullan
   const supabase = await createClient();
   const { data: user } = await supabase
     .from("profiles")
-    .select("id, full_name, block, status, is_admin, created_at, dorm:dorms(name, city)")
+    .select("id, full_name, block, status, is_admin, created_at, dorm:dorms(name, city), activity:user_activity(last_seen_at)")
     .eq("id", id)
     .maybeSingle();
   if (!user) notFound();
 
   const nowIso = new Date().toISOString();
-  const [listingsRes, against, by, revealsBy] = await Promise.all([
+  const [emailRes, listingsRes, against, by, revealsBy] = await Promise.all([
+    supabase.rpc("admin_user_email", { p_user_id: id }),
     supabase
       .from("listings")
       .select("id, type, platform, restaurant, description, missing_amount, price_per_person, status, created_at, expires_at, dorm:dorms(name), reveals:phone_reveals(count)")
@@ -115,6 +116,8 @@ export default async function AdminUserPage({ params }: PageProps<"/admin/kullan
       .order("created_at", { ascending: false }),
     supabase.from("phone_reveals").select("id", { count: "exact", head: true }).eq("viewer_id", id),
   ]);
+  const email = emailRes.data;
+  const lastSeenAt = user.activity?.last_seen_at ?? null;
   const listings = (listingsRes.data ?? []) as unknown as ListingRow[];
   const reportsAgainst = (against.data ?? []) as unknown as ReportRow[];
   const reportsBy = (by.data ?? []) as unknown as ReportRow[];
@@ -136,18 +139,28 @@ export default async function AdminUserPage({ params }: PageProps<"/admin/kullan
               {user.dorm?.name} · {user.dorm?.city}
               {user.block ? ` · ${user.block}` : ""}
             </p>
-            <p className="text-sm text-muted-foreground">Katılma: {formatDateTime(user.created_at)}</p>
+            {email ? (
+              <a href={`mailto:${email}`} className="w-fit text-sm font-semibold break-all text-accent underline-offset-2 hover:underline">
+                {email}
+              </a>
+            ) : null}
+            <p className="text-sm text-muted-foreground">
+              Katılma: {formatDateTime(user.created_at)} ·{" "}
+              {lastSeenAt ? `Son görülme: ${formatAgo(lastSeenAt)}` : "Henüz görülmedi"}
+            </p>
           </div>
           <div className="flex flex-wrap gap-1">
             <Badge tone={user.status === "active" ? "success" : user.status === "banned" ? "danger" : "warning"}>
               {PROFILE_STATUS_LABELS[user.status]}
             </Badge>
             {user.is_admin ? <Badge tone="accent">Yönetici</Badge> : null}
+            {isOnline(lastSeenAt) ? <Badge tone="success">Çevrim içi</Badge> : null}
           </div>
         </div>
         {user.id !== admin.id ? <StatusButtons userId={user.id} current={user.status} /> : null}
         <p className="text-xs text-muted-foreground">
-          Telefon numarası gizlilik kuralı gereği yönetici panelinde de gösterilmez.
+          Telefon numarası gizlilik kuralı gereği yönetici panelinde de gösterilmez. E-posta yalnızca kullanıcıyla
+          iletişim için gösterilir; paylaşma.
         </p>
       </Card>
 

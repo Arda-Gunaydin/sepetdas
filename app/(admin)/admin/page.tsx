@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ListingStatusBadge } from "@/components/admin/listing-status-badge";
 import { StatTile } from "@/components/admin/stat-tile";
+import { AutoRefresh } from "@/components/auto-refresh";
 import { Card, PageTitle } from "@/components/ui/card";
-import { istanbulDayStartIso, requireAdmin } from "@/lib/admin";
+import { istanbulDayStartIso, onlineSinceIso, requireAdmin } from "@/lib/admin";
 import { LISTING_TYPE_LABELS } from "@/lib/labels";
 import type { Enums } from "@/lib/supabase/database.types";
 import { createClient } from "@/lib/supabase/server";
@@ -29,10 +30,11 @@ export default async function AdminOverviewPage() {
   const todayIso = istanbulDayStartIso();
   const count = { count: "exact", head: true } as const;
 
-  const [users, usersToday, activeListings, listingsToday, revealsToday, openReports, pendingRequests, suspended, dormStats, recent] =
+  const [users, usersToday, online, activeListings, listingsToday, revealsToday, openReports, pendingRequests, suspended, dormStats, recent] =
     await Promise.all([
       supabase.from("profiles").select("id", count),
       supabase.from("profiles").select("id", count).gte("created_at", todayIso),
+      supabase.from("user_activity").select("user_id", count).gt("last_seen_at", onlineSinceIso()),
       supabase.from("listings").select("id", count).eq("status", "active").gt("expires_at", nowIso),
       supabase.from("listings").select("id", count).gte("created_at", todayIso),
       supabase.from("phone_reveals").select("id", count).gte("created_at", todayIso),
@@ -50,10 +52,12 @@ export default async function AdminOverviewPage() {
 
   return (
     <>
+      <AutoRefresh />
       <PageTitle title="Genel bakış" description="Bugün: İstanbul saatiyle gece yarısından beri" />
 
       <section aria-label="Özet sayılar" className="grid grid-cols-2 gap-3 md:grid-cols-4">
         <StatTile label="Toplam kullanıcı" value={users.count ?? 0} hint={`Bugün +${usersToday.count ?? 0}`} href="/admin/kullanicilar" />
+        <StatTile label="Şu an çevrim içi" value={online.count ?? 0} hint="Son 2 dakikada sitede" href="/admin/kullanicilar?durum=cevrimici" />
         <StatTile label="Şu an aktif ilan" value={activeListings.count ?? 0} href="/admin/ilanlar?durum=aktif" />
         <StatTile label="Bugün açılan ilan" value={listingsToday.count ?? 0} href="/admin/ilanlar" />
         <StatTile label="Bugün numara açma" value={revealsToday.count ?? 0} />
